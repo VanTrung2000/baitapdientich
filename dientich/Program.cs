@@ -1,4 +1,4 @@
-﻿
+
 using System;
 
 namespace dientich
@@ -7,17 +7,24 @@ namespace dientich
     {
         static void Main(string[] args)
         {
-            float width,height;
+            float width, height;
 
             Console.Write("width = ");
             width = float.Parse(Console.ReadLine());
             Console.Write("height=");
             height = float.Parse(Console.ReadLine());
-            float dientich = width * height;
-            Console.WriteLine("Dien tich HCN la: " + dientich);
+            dientich(width, height);
 
             Console.ReadKey();
         }
+        static float dientich(float a,float b){
+            float c = a * b;
+            Console.WriteLine("dien tich la:" + c);
+            return c;
+
+               
+
+}
     }
 }
 
